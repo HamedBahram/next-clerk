@@ -8,9 +8,18 @@ export default function Header() {
   return (
     <header className='py-4'>
       <nav className='container flex items-center justify-between'>
-        <ul className='flex gap-6'>
+        <ul className='flex gap-10 text-sm font-medium'>
           <li>
             <Link href='/'>Home</Link>
+          </li>
+          <li>
+            <Link href='/protected/server'>Protected (server)</Link>
+          </li>
+          <li>
+            <Link href='/protected/client'>Protected (client)</Link>
+          </li>
+          <li>
+            <Link href='/api/me'>Who am I?</Link>
           </li>
         </ul>
 
